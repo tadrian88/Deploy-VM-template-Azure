@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "networkInterfaceName": {
+            "value": "rltest-centos188"
+        },
+        "networkSecurityGroupId": {
+            "value": "/subscriptions/8e346e72-1237-4ba0-b40e-51bab197bf0d/resourceGroups/Price-Waterhouse-Coopers-RG/providers/Microsoft.Network/networkSecurityGroups/RLCentOS"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/8e346e72-1237-4ba0-b40e-51bab197bf0d/resourceGroups/Infrastructure-Team-RG/providers/Microsoft.Network/virtualNetworks/Infrastructure-Team-RG-vnet"
+        },
+        "publicIpAddressName": {
+            "value": "RLtest-CentOS-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "RLtest-CentOS"
+        },
+        "virtualMachineRG": {
+            "value": "Infrastructure-Team-RG"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B4ms"
+        },
+        "adminUsername": {
+            "value": "rladmin"
+        },
+        "adminPassword": {
+            "value": null
+        }
+    }
+}
